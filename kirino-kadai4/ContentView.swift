@@ -16,12 +16,14 @@ struct ContentView: View {
                 Text("\(counter)")
                 Button {
                     print("+1タップ")
+                    counter += 1
                 } label: {
                     Text("+1")
                         .padding(.vertical)
                 }
                 Button {
                     print("Clearタップ")
+                    counter = 0
                 } label: {
                     Text("Clear")
                 }
