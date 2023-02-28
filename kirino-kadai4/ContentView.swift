@@ -8,12 +8,26 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State private var counter: Int = 0
+    
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+        HStack(alignment: .top) {
+            VStack(alignment: .leading) {
+                Text("\(counter)")
+                Button {
+                    print("+1タップ")
+                } label: {
+                    Text("+1")
+                        .padding(.vertical)
+                }
+                Button {
+                    print("Clearタップ")
+                } label: {
+                    Text("Clear")
+                }
+                Spacer()
+            }
+            .frame(maxWidth: .infinity, alignment: .leading)
         }
         .padding()
     }
