@@ -11,7 +11,7 @@ struct ContentView: View {
     @State private var counter: Int = 0
     
     var body: some View {
-        HStack(alignment: .top) {
+        HStack {
             VStack(alignment: .leading) {
                 Text("\(counter)")
                 Button {
