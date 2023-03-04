@@ -15,7 +15,6 @@ struct ContentView: View {
             VStack(alignment: .leading) {
                 Text("\(counter)")
                 Button {
-                    print("+1タップ")
                     counter += 1
                 } label: {
                     Text("+1")
